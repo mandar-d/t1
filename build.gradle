@@ -3,6 +3,7 @@ apply plugin: 'application'
 mainClassName='hello'
 jar{
   baseName="Test"
+  from sourceSets.main.output
   manifest{
     attributes(
 	'Main-Class': 'hello'
