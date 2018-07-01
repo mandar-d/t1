@@ -1,6 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'application'
 mainClassName='hello'
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allSource
+	from sourceSets.main.output
+    classifier = 'sources'
+}
 jar{
   baseName="Test"
   from sourceSets.main.output
