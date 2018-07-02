@@ -7,4 +7,3 @@ manifest{
     attributes('Main-Class': 'helloWorld.hello')
    }
 }
-
